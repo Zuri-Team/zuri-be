@@ -1,6 +1,7 @@
 const { body, validationResult } = require('express-validator');
 const ZuriIntern = require('../models/ZuriInternship-InternModel');
 const { message } = require('../utils/email/template/zuriInternshipWelcome');
+const { trainingWelcome } = require('../utils/email/template/zuriInternshipTrainWelcome.')
 const { responseHandler } = require('../utils/responseHandler');
 const sendEmail = require('../utils/email/send-email');
 
@@ -117,10 +118,14 @@ const zuriInternApplication = async (req, res) => {
       return responseHandler(res, 'Unable to register application', 401, false);
     }
 
+    let subjectSwitch = level !== 'Novice' ? 'Welcome to Zuri Internship' : 'Welcome to Zuri Training';
+    let messageSwitch = level !== 'Novice' ? message() : trainingWelcome()
+
+
     const option = {
       email,
-      subject: 'Welcome to Zuri Internship',
-      message: await message()
+      subject: subjectSwitch,
+      message: await messageSwitch
     };
     
     const sentEmail = await sendEmail(option);
