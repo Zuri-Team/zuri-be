@@ -118,14 +118,12 @@ const zuriInternApplication = async (req, res) => {
       return responseHandler(res, 'Unable to register application', 401, false);
     }
 
-    let subjectSwitch = level !== 'Novice' ? 'Welcome to Zuri Internship' : 'Welcome to Zuri Training';
-    let messageSwitch = level !== 'Novice' ? message() : trainingWelcome()
 
 
     const option = {
       email,
-      subject: subjectSwitch,
-      message: await messageSwitch
+      subject: 'Welcome to Zuri Internship',
+      message: await message()
     };
     
     const sentEmail = await sendEmail(option);
