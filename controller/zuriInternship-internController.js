@@ -86,6 +86,7 @@ const zuriInternApplication = async (req, res) => {
     });
 
     if (myarray.length > 0) {
+      console.log('ERROR->',myarray);
       return responseHandler(res, 'An error occured in your inputs', 422, false, myarray);
     }
 
