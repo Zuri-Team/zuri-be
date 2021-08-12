@@ -124,9 +124,9 @@ exports.message = () => {
                       <div class="o_col-6s o_sans o_text o_text-secondary o_center" style="font-family: Helvetica, Arial, sans-serif;margin-top: 0px;margin-bottom: 0px;font-size: 16px;line-height: 24px;max-width: 584px;color: #424651;text-align: center;">
                         <h2> Welcome to Zuri Internship  </h2>
 
-                        <p style="text-align: left;">Your registration was successful.</p>
+                        <p style="text-align: left;">Your registration was successful!</p>
                          
-                        <p style="text-align: left;">You will receive invite to the workspace in August. </p>
+                        <p style="text-align: left;"><a href="https://internship.zuri.team/join">Click here to join the workspace now</a></p>
 
                         
                         <p style="text-align: left;">You can follow us on twitter to keep updated on latest information <a href="https://twitter.com/thezuriteam">The Zuri Twitter</a></p>
