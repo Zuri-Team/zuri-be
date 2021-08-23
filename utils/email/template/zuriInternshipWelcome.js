@@ -126,7 +126,7 @@ exports.message = () => {
 
                         <p style="text-align: left;">Your registration was successful!</p>
                          
-                        <p style="text-align: left;"><a href="https://internship.zuri.team/join">Click here to join the workspace now</a></p>
+                        <p style="text-align: left;">You are now on our waitlist for 2022 cohort</p>
 
                         
                         <p style="text-align: left;">You can follow us on twitter to keep updated on latest information <a href="https://twitter.com/thezuriteam">The Zuri Twitter</a></p>
