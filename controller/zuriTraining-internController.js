@@ -74,7 +74,7 @@ const createIntern = async (req, res) => {
     };
     const sentEmail = await sendEmail(option);
 
-    if(!sendEmail){
+    if(!sendEmail) {
       return responseHandler(res, 'Registration successful, error sending confirmation email', 500, false, error.message);
     }
 

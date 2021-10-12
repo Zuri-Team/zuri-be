@@ -12,7 +12,7 @@ const {
   getSingleMentorApplication, deactivateMentor
 } = require('../controller/zuriTraining-mentorController');
 
-const { 
+const {
   findByNameIntern,
   filterInternTrainingData,
   findByNameMentor,
