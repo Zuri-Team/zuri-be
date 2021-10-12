@@ -49,6 +49,10 @@ const zuriTrainingSchema = Schema({
     type: String,
     required: false
   },
+  message: {
+    type: String,
+    required: false
+  },
   country: {
     type: String,
     required: false

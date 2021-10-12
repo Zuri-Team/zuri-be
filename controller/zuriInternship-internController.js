@@ -61,6 +61,7 @@ const zuriInternApplication = async (req, res) => {
       email,
       age,
       gender,
+      
       achievement,
       eduLevel,
       track,

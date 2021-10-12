@@ -61,5 +61,10 @@ exports.InternObject = {
     type: String,
     enum: ['male', 'female'],
     default: 'female'
+  },
+
+  referredFrom : {
+    type: String,
+    
   }
 };

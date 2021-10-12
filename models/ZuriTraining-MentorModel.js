@@ -55,7 +55,7 @@ const zuriTrainingMentorSchema = Schema({
   },
   stateOfResidence: {
     type: String
-  },
+  }
 },
 {
   timestamps: true

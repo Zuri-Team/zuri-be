@@ -9,6 +9,7 @@ const zuriInternshipRouter = require('./routes/zuriInternshipRoutes');
 const contactRouter = require('./routes/contactRoutes');
 const zuriTrainingRouter = require('./routes/zuriTrainingRoutes');
 const { handleError } = require('./utils/error');
+const internRouter = require('./routes/internRoutes');
 
 const app = express();
 
@@ -22,6 +23,7 @@ app.use('/api/v1', adminRouter);
 app.use('/api/v1/internship', zuriInternshipRouter);
 app.use('/api/v1/training', zuriTrainingRouter);
 app.use('/api/v1', contactRouter);
+app.use('/api/v1', internRouter);
 
 // Express error middleware
 app.use((err, req, res, next) => next(handleError(res, err)));
