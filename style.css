@@ -1,0 +1,80 @@
+body.p{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+    margin-left: auto;
+    padding: 2em;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+nav {
+    height: 20px;
+}
+nav a img{
+    height: 30px;
+    border-radius: 100%;}
+main{
+    width: 50%;
+    margin: 6.9em auto;
+    text-align: center;
+}
+input{
+    width: 80%;
+    padding: 1em;
+    border-radius: 30px;
+    border: 1px solid gray;
+}
+.btns_container{
+    margin-top: 1em;
+}
+.btns_container button{
+    padding: 1em;
+    border: none;
+}
+
+.middle-li{
+    display: flex;
+    justify-content: center;
+    margin:0,auto;
+}
+.middle-li ul {
+    list-style: none;
+    display: flex;
+    flex-direction: horizontal;
+    padding: 1em;
+    margin: 0,auto;
+    font-size: 15px;
+}
+
+.middle-li ul a{
+    color: blue;
+
+}
+footer {
+    background-color: rgb(240, 236, 236);
+}
+.footer_top{
+    padding: 1em;
+}
+.footer_bottom{
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid gray;
+}
+.left a{
+    margin-right: 1em;
+}
+.right a{
+    margin-right: 1em;
+}
